@@ -67,15 +67,7 @@ class Game < Player
       if won?
         puts "Congratulations #{winner}!"
       elsif draw?
-        puts "Cat's Game!"
-
-        turn
-      while over? == false
-        self.board.update(self.current_player.token, self.current_player)
-        turn
-        over?
-        break if won? == true || over? == true
-
+        puts "Cat's Game!""
       end
   end
 
