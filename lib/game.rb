@@ -61,7 +61,6 @@ class Game < Player
   end
 
   def play
-<<<<<<< HEAD
     until over?
       turn
     end
@@ -69,14 +68,14 @@ class Game < Player
         puts "Congratulations #{winner}!"
       elsif draw?
         puts "Cat's Game!"
-=======
+
         turn
       while over? == false
         self.board.update(self.current_player.token, self.current_player)
         turn
         over?
         break if won? == true || over? == true
->>>>>>> 721901e59f3b6d389e1b9a87a1be40b798febbae
+
       end
   end
 
