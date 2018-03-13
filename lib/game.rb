@@ -66,7 +66,7 @@ class Game < Player
     end
       if won? == true && winner == "X"
         puts "Congratulations #{player_1}!"
-      elsif won? == true && winner == "X"
+      elsif won? == true && winner == "O"
         puts "Congratulations #{player_1}!"
       elsif draw?
         puts "Cat's Game!"
