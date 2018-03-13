@@ -273,25 +273,25 @@ describe 'Game' do
 
       game.play
     end
-    
+
     it 'stops playing if someone has won' do
       game = Game.new
       game.board.cells = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-    
+
       allow($stdout).to receive(:puts)
-    
+
       expect(game).to_not receive(:turn)
-    
+
       game.play
     end
-    
+
     it 'congratulates the winner X' do
       game = Game.new
       game.board.cells = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
-    
+
       expect($stdout).to receive(:puts).with("Congratulations X!")
-    
+
       game.play
     end
 
