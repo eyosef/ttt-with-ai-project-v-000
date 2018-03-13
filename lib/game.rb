@@ -64,7 +64,7 @@ class Game < Player
     until over?
       turn
     end
-      if won?
+      if won? && winner == "X"
         puts "Congratulations #{player_1}!"
       elsif draw?
         puts "Cat's Game!"
